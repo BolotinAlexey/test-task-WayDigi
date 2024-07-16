@@ -1,0 +1,47 @@
+:root {
+  --trans: 0.3s linear;
+  --accent-color: rgb(204, 142, 31);
+  --main-color: #111;
+  --bg-color: #f6f5f2;
+}
+
+:root:has(.switcher__input:checked) {
+  --bg-color: #111;
+  --main-color: #f6f5f2;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  transition: all var(--trans);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
