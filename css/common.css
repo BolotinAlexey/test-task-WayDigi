@@ -1,16 +1,20 @@
 :root {
+  --max-width: 1280px;
   --trans: 0.3s linear;
   --accent-color: #cc8e1e;
   --main-color: #2b3f5b;
   --bg-color: #f6f5f2;
   --bg-card: #fff;
   --bg-btn: rgba(204, 142, 30, 0.1);
+  --bg-carosel-btn: #f1efe9;
+  --second-color: #000;
 }
 
 :root:has(.switcher__input:checked) {
   --bg-color: #2b3f5b;
   --main-color: #f6f5f2;
   --bg-card: #000;
+  --second-color: #fff;
 }
 
 * {
@@ -50,7 +54,7 @@ input[type="checkbox"] {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 

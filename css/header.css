@@ -23,13 +23,32 @@
 }
 
 .nav__item:hover > .about-us__list,
-.nav__item:hover > .programs__list {
+.nav__item:hover > .programs__list,
+.nav__item:has(.nav__btn:focus) > .about-us__list,
+.nav__item:has(.nav__btn:focus) > .programs__list,
+.nav__item:has(.programs__link:focus) > .programs__list,
+.nav__item:has(.about-us__link:focus) > .about-us__list {
   height: auto;
   transform: scaleY(1);
 }
 
-.nav__item:hover .nav__svg {
+.nav__item:hover .nav__svg,
+.nav__item:has(.nav__btn:focus) .nav__svg {
   rotate: -90deg;
+}
+
+.nav__item:hover .about-us__item,
+.nav__item:has(.nav__btn:focus) .about-us__item,
+.nav__item:hover .programs__item,
+.nav__item:has(.programs__link:focus) .programs__item,
+.nav__item:has(.about-us__link:focus) .programs__item {
+  pointer-events: auto;
+}
+
+.nav__btn {
+  border: none;
+  background-color: transparent;
+  color: currentColor;
 }
 
 .about-us__list,
@@ -45,6 +64,12 @@
 .about-us__item,
 .programs__item {
   margin-top: 0.4rem;
+  pointer-events: none;
+}
+
+.about-us__item:hover,
+.programs__item:hover {
+  background-color: var(--bg-btn);
 }
 
 .nav__svg {

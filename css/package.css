@@ -51,4 +51,9 @@
   font-weight: 500;
   line-height: 1.5;
   color: var(--accent-color);
+  transition: transform var(--trans);
+}
+
+.card__btn:hover {
+  transform: scale(1.1);
 }

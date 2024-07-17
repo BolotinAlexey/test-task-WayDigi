@@ -13,12 +13,17 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/action.css" />
     <link rel="stylesheet" href="./css/package.css" />
+    <link rel="stylesheet" href="./css/offer.css" />
+    <link rel="stylesheet" href="./css/price.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <title>Document</title>
   </head>
   <body>
+    <script src="./script.js" defer></script>
     <header class="header container">
       <div class="logo">
-        <img src="./assets/logo-svg.svg" alt="logo" />
+        <img src="./assets/images/logo-svg.svg" alt="logo" />
       </div>
       <nav class="header__menu nav">
         <ul class="nav__list">
@@ -29,7 +34,8 @@
             <a href="" class="nav__link">KONTAKT</a>
           </li>
           <li class="nav__item programs">
-            Programs
+            <button class="nav__btn">Programs</button>
+
             <span class="programs__span"
               ><svg
                 class="nav__svg"
@@ -59,7 +65,8 @@
             </ul>
           </li>
           <li class="nav__item about-us">
-            O nas
+            <button class="nav__btn">O nas</button>
+
             <span class="about-us__span"
               ><svg
                 class="nav__svg"
@@ -161,6 +168,7 @@
       </div>
     </header>
     <main class="main container">
+      <!-- action -->
       <section class="section action">
         <div class="action__left">
           <h2 class="section__title">Aкції та Акційні пакети</h2>
@@ -174,14 +182,20 @@
         <div class="action__right">
           <div class="action__wrap-window">
             <div class="action__wrap-img">
-              <img class="action__img" src="./assets/action.png" alt="action" />
+              <img
+                class="action__img"
+                src="./assets/images/action.png"
+                alt="action"
+              />
             </div>
             <div class="action__cover flex-center">
-              <img src="./assets/medical.svg" alt="medical" />
+              <img src="./assets/images/medical.svg" alt="medical" />
             </div>
           </div>
         </div>
       </section>
+
+      <!-- package -->
       <section class="section package">
         <h2 class="section__title">пакети</h2>
         <ul class="package__wrap">
@@ -216,6 +230,159 @@
             <button class="card__btn">Переглянути детальніше</button>
           </li>
         </ul>
+      </section>
+
+      <!-- offer -->
+      <section class="section offer">
+        <h2 class="section__title">Акційні пропозиції</h2>
+        <div class="offer__wrap">
+          <div class="offer_left carousel">
+            <button class="carousel__btn left-btn">
+              <svg
+                width="15"
+                height="17"
+                viewBox="0 0 15 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.79782 10.3614C0.475798 9.58948 0.4758 7.67912 1.79782 6.90718L11.6715 1.14184C13.0048 0.363302 14.68 1.32499 14.68 2.86896L14.68 14.3996C14.68 15.9436 13.0048 16.9053 11.6715 16.1268L1.79782 10.3614Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <div class="carousel__window">
+              <ul class="carousel__list">
+                <li class="carousel__item">
+                  <img
+                    class="carousel__img"
+                    src="./assets/images/offer.png"
+                    alt="offer"
+                  />
+                  <div class="headline">
+                    <h4 class="headline__title">
+                      Акція "-40% на пробне заняття з кінезітерапії"
+                    </h4>
+                    <p class="headline__text">
+                      Маєте чудову нагоду потурбуватись про власне здоров’я за
+                      вигідною пропозицією вартістю 680 408 грн.
+                    </p>
+                    <a class="headline__link" href="">Переглянути детальніше</a>
+                  </div>
+                </li>
+                <li class="carousel__item">
+                  <img
+                    class="carousel__img"
+                    src="./assets/images/offer.png"
+                    alt="offer"
+                  />
+                  <div class="headline">
+                    <h4 class="headline__title">
+                      Акція "-40% на пробне заняття з кінезітерапії"
+                    </h4>
+                    <p class="headline__text">
+                      Маєте чудову нагоду потурбуватись про власне здоров’я за
+                      вигідною пропозицією вартістю 680 408 грн.
+                    </p>
+                    <a class="headline__link" href="">Переглянути детальніше</a>
+                  </div>
+                </li>
+                <li class="carousel__item">
+                  <img
+                    class="carousel__img"
+                    src="./assets/images/offer.png"
+                    alt="offer"
+                  />
+                  <div class="headline">
+                    <h4 class="headline__title">
+                      Акція "-40% на пробне заняття з кінезітерапії"
+                    </h4>
+                    <p class="headline__text">
+                      Маєте чудову нагоду потурбуватись про власне здоров’я за
+                      вигідною пропозицією вартістю 680 408 грн.
+                    </p>
+                    <a class="headline__link" href="">Переглянути детальніше</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <button class="carousel__btn right-btn">
+              <svg
+                width="15"
+                height="17"
+                viewBox="0 0 15 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.16 6.90223C14.4933 7.67203 14.4933 9.59653 13.16 10.3663L3.31997 16.0475C1.98664 16.8173 0.319973 15.855 0.319973 14.3154L0.319974 2.95315C0.319974 1.41355 1.98664 0.451301 3.31997 1.2211L13.16 6.90223Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+          <form class="offer_right form">
+            <h4 class="form__title">Czekamy na Ciebie!</h4>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="name">Imię i nazwisko</label>
+                <input
+                  placeholder="name"
+                  type="text"
+                  class="form__input"
+                  id="name"
+                  value="Agnieszka Kowalczyk"
+                />
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="tel">Phone</label>
+                <input
+                  placeholder="+48 XXX XXX XXX"
+                  type="tel"
+                  class="form__input"
+                  id="tel"
+                />
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="mail">E-mail</label>
+                <input
+                  placeholder="name@gmail.com"
+                  type="email"
+                  class="form__input"
+                  id="mail"
+                />
+              </li>
+            </ul>
+
+            <div class="agree">
+              <label for="agree"
+                >Wypełnienie formularza zgłoszeniowego jest równoznaczne z
+                wyrażeniem zgody na przetwarzanie danych osobowych, otrzymywanie
+                newslettera, oraz kontakt telefoniczny</label
+              >
+              <input type="checkbox" name="agree" id="agree" />
+              <div class="agree__checkbox flex-center">
+                <svg
+                  class="agree__svg"
+                  width="16"
+                  height="11"
+                  viewBox="0 0 16 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 4.15428L6.68293 8.63428L14 1.63428"
+                    stroke="#CC8E1E"
+                    stroke-width="3"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <button type="submit" class="form__btn">Wyślij</button>
+          </form>
+        </div>
       </section>
     </main>
   </body>

@@ -1,0 +1,202 @@
+.offer__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carousel__window {
+  display: flex;
+  width: 629px;
+  overflow: hidden;
+}
+
+.carousel__list {
+  display: flex;
+  transition: all var(--trans);
+}
+
+.carousel__item {
+  width: 629px;
+  overflow: hidden;
+}
+
+.carousel__btn {
+  width: 89px;
+  height: 88px;
+  border: none;
+  background: var(--bg-carosel-btn);
+  backdrop-filter: blur(15px);
+  border-radius: 300px 0 0 300px;
+  color: var(--accent-color);
+  transition: color var(--trans);
+}
+
+.carousel__btn:hover {
+  color: red;
+}
+
+.carousel__img {
+  object-fit: cover;
+}
+
+.headline {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 1rem;
+}
+
+.headline__title {
+  margin: 0;
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.25;
+  color: var(--second-color);
+}
+
+.headline__text {
+  margin: 0;
+  font-family: "Inter Display";
+  line-height: 1.5;
+  color: var(--main-color);
+}
+
+.headline__link {
+  font-family: "Inter Display";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--accent-color);
+}
+
+/* form */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 26px;
+  gap: 1rem;
+  width: 413px;
+  border: 1px solid rgba(204, 142, 30, 0.27);
+}
+
+.form__title {
+  margin: 0;
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.form__list {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 361px;
+}
+
+.form__item {
+  position: relative;
+  box-sizing: content-box;
+  height: 50px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+
+  border: 1px solid rgba(204, 142, 30, 0.6);
+  border-radius: 10px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0.5rem;
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+
+  color: #646e7c;
+}
+
+.form__input {
+  width: 100%;
+  height: 1.5rem;
+  font-family: "Inter Display";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  background-color: transparent;
+  color: var(--main-color);
+  border: none;
+}
+
+.agree {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2px;
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.agree__checkbox {
+  min-width: 1.5rem;
+  height: 1.5rem;
+
+  background: var(--bg-color);
+  border: 1px solid #b6bbc3;
+  border-radius: 5px;
+}
+
+.agree__svg {
+  display: none;
+}
+#agree:checked ~ .agree__checkbox > .agree__svg {
+  display: block;
+}
+
+.form__btn {
+  padding: 15px 20px;
+  gap: 10px;
+
+  width: 361px;
+  height: 50px;
+
+  background: var(--accent-color);
+  border-radius: 50px;
+  border: none;
+
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2;
+
+  color: var(--bg-card);
+  transition: transform var(--trans);
+}
+
+.form__btn:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1280px) {
+  .offer__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
