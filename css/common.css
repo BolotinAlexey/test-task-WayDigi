@@ -1,19 +1,27 @@
 :root {
   --trans: 0.3s linear;
-  --accent-color: rgb(204, 142, 31);
-  --main-color: #111;
+  --accent-color: #cc8e1e;
+  --main-color: #2b3f5b;
   --bg-color: #f6f5f2;
+  --bg-card: #fff;
+  --bg-btn: rgba(204, 142, 30, 0.1);
 }
 
 :root:has(.switcher__input:checked) {
-  --bg-color: #111;
+  --bg-color: #2b3f5b;
   --main-color: #f6f5f2;
+  --bg-card: #000;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--main-color);
   transition: all var(--trans);
+  box-sizing: border-box;
 }
 
 ul {
@@ -60,10 +68,22 @@ input[type="checkbox"] {
   font-family: "Oranienbaum", serif;
   font-size: 2.5rem;
   text-transform: uppercase;
+  font-family: "Oranienbaum";
+  font-size: 40px;
+  line-height: 48px;
 }
 
 .section__subtitle {
-  font-family: sans-serif;
-  font-weight: 300;
+  font-family: "Inter Display" sans-serif;
+  font-weight: 400;
   line-height: 1.5;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: "Inter Display";
+  src: url("../assets/fonts/InterVariable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
