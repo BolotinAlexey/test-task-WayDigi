@@ -1,0 +1,78 @@
+.price__wrap {
+  padding: 3rem 108px;
+  background: var(--bg-card);
+  border: 1px solid rgba(204, 142, 30, 0.27);
+}
+
+.price__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 858px;
+  overflow: auto;
+}
+
+.price__item {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  padding: 0 2rem;
+}
+
+tr {
+  width: 100%;
+}
+
+th {
+  max-width: 197px;
+  height: 4rem;
+
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.25;
+  text-align: center;
+  background: #faf4e8;
+}
+
+td {
+  max-width: 197px;
+  height: 3rem;
+  padding: 0.5rem 0px;
+  background: var(--bg-carosel-btn);
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  color: var(--second-color);
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  max-width: 630px;
+}
+
+th:nth-child(3),
+td:nth-child(2) {
+  max-width: 197px;
+}
+
+.price__list::-webkit-scrollbar {
+  width: 8px;
+  height: 85px;
+}
+
+.price__list::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+.price__list::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 10px;
+}
