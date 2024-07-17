@@ -31,6 +31,12 @@ label {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 input[type="checkbox"] {
   display: none;
 }
@@ -40,8 +46,24 @@ input[type="checkbox"] {
   margin: 0 auto;
 }
 
+.section {
+  margin-top: 3rem;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.section__title {
+  font-family: "Oranienbaum", serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.section__subtitle {
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
 }
