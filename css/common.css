@@ -8,6 +8,7 @@
   --bg-btn: rgba(204, 142, 30, 0.1);
   --bg-carosel-btn: #f1efe9;
   --second-color: #000;
+  --bg-head: #faf4e8;
 }
 
 :root:has(.switcher__input:checked) {
@@ -15,6 +16,8 @@
   --main-color: #f6f5f2;
   --bg-card: #000;
   --second-color: #fff;
+  --bg-head: #111;
+  --bg-carosel-btn: #222;
 }
 
 * {

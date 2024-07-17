@@ -37,7 +37,7 @@ th {
   font-size: 2rem;
   line-height: 1.25;
   text-align: center;
-  background: #faf4e8;
+  background: var(--bg-head);
 }
 
 td {
